@@ -1,0 +1,233 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+::-webkit-scrollbar {
+  background-color: #33d1cc;
+  color: #ff3150;
+}
+::-webkit-scrollbar-button {
+  background-color: var(--dark-color);
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    #ff3150 0%,
+    #ff3150 50%,
+    #ffc400 50%,
+    #ffc400 100%
+  );
+}
+.search {
+  border-left: 1px solid var(--green-color);
+}
+.search svg {
+  color: var(--green-color);
+}
+.nav-item {
+  padding: 0.5rem;
+}
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar a {
+  color: white;
+}
+.landing {
+  height: calc(100vh - 72px);
+  background-color: var(--dark-color);
+  color: white;
+}
+.btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  border: none;
+  font-weight: 600;
+}
+.btn:hover {
+  color: var(--yellow-color);
+}
+.btn:focus {
+  box-shadow: none;
+}
+.main-btn {
+  padding: 0.5rem 1rem;
+}
+.compnent::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translatex(-50%);
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  bottom: -20px;
+}
+.icons {
+  height: 200px;
+}
+.icons svg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ic {
+  font-size: 4rem;
+  color: var(--green-color);
+}
+.number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.h4 {
+  color: var(--yellow-color);
+}
+.pics {
+  background-color: var(--section-color);
+}
+.second {
+  flex-direction: row;
+}
+.second li .nav-link {
+  padding: 0.5rem 1rem;
+}
+.second a:hover:not(.active) {
+  color: var(--red-color);
+}
+.second a {
+  color: black;
+  font-weight: 600;
+}
+.second a.active {
+  background-color: #ff3150;
+  color: var(--yellow-color) !important;
+}
+.box:hover::before {
+  left: 5px;
+}
+.box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.box::before {
+  transition: 0.5s;
+  position: absolute;
+  content: "Application";
+  color: white;
+  left: -100%;
+  top: 5px;
+  width: calc(100% - 10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 30px;
+  height: calc(100% - 10px);
+  background-color: rgb(51 209 204 / 76%);
+}
+.wow {
+  max-width: 500px;
+}
+.meet {
+  background-color: var(--section-color);
+}
+.meet .top h3 {
+  font-weight: 600;
+  color: var(--yellow-color);
+}
+.hi {
+  flex-direction: column;
+}
+.blue {
+  background-color: var(--green-color);
+  color: white;
+}
+.start {
+  background-color: var(--dark-color);
+}
+.start h1 {
+  color: white;
+}
+.border-1 {
+  border-color: #eff7fa;
+}
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card h5 {
+  margin-top: -10px;
+}
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.subscribe h5 {
+  color: var(--dark-color);
+}
+.submit {
+  border: none;
+  color: var(--yellow-color);
+  background-color: var(--dark-color);
+}
+#email {
+  border: none;
+  background-color: transparent;
+  flex: 1;
+  color: white;
+  position: relative;
+}
+#email::placeholder {
+  color: white;
+  color: white;
+}
+.email::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+.email {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex: 1;
+}
+.form {
+  flex: 1;
+}
+#email:focus {
+  outline: none;
+}
+.a li {
+  padding: 0.5rem 0;
+  font-weight: 500;
+}
+footer {
+  background-color: var(--dark-color);
+}
+.onespan {
+  color: var(--green-color);
+}
+.twospan {
+  color: var(--yellow-color);
+}
+.facebook {
+  background-color: #1877f2;
+}
+.twitter {
+  background-color: #1da1f2;
+}
+.youtube {
+  background-color: #ff0000;
+}
+.linkedin {
+  background-color: #0077b5;
+}
